@@ -1,0 +1,240 @@
+/* IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  color: #fff;
+  background-color: #04080f;
+  padding: 13vh 5vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.about_me {
+  max-width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 35px;
+  line-height: 45px;
+}
+
+.description {
+  padding-top: 20px;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 100;
+}
+
+.network {
+ margin: 23vh auto 0 auto;
+ display: flex;
+ gap: 2rem;
+}
+
+.projects {
+  padding-left: 5rem;
+}
+
+.projects-title {
+  padding-left: 1rem;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  width: 40vw;
+}
+
+.project {
+  min-width: 15vw;
+  max-width: 15vw;
+  min-height: 25vh;
+  margin: 1rem;
+  padding: 1.5rem;;
+}
+
+.project:nth-child(odd) {
+  background-color: #00b4d8;
+}
+
+.project:nth-child(even) {
+  background-color: #02c39a;
+}
+
+.project-title{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.project-title:after{
+  content: "";
+  display: block;
+  margin-top: 1rem;
+  max-width: 200px;
+  border-top: 3px solid #fff;
+}
+
+.project-description {
+  margin-top: 1rem;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+  .projects {
+    margin-top: 5rem;
+    padding-left: 0;
+  }
+  .network {
+    margin-top: 5rem;
+  }
+  .project {
+    min-width: 35vw;
+    min-height: 25vh;
+    margin: 1rem;
+    padding: 1.5rem;;
+  }
+}
+
+
